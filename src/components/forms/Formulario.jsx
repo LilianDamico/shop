@@ -33,7 +33,8 @@ const Formulario = () => {
           <div>
             <label for="msg">Mensagem:</label>
             <textarea id="msg"></textarea>
-          </div>      
+          </div> 
+          <button className='custom-button' type='submit'>Enviar</button>     
         </form>
       </section>       
     </div>
