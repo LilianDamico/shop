@@ -12,6 +12,7 @@ const Topo = () => {
       <div className='title'>
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/cliente">Cadastre-se</Link>
           <Link to="/cadastro">Carrinho de Compras</Link>
           <Link to="/relatorio">Seus Pedidos</Link>
         </nav>

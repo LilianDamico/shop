@@ -1,10 +1,11 @@
-.carrocel {
+.carousel {
     width: 100%;
-    background-color: rgba(0, 0, 50, 0.9);
+    background-color: rgba(0, 0, 50);
     color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.frame0 {
+.frame {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,21 +17,26 @@
     text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Adiciona esta linha para manipular overlays filhos */
 }
 
-.frame0 img {
+.frame img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Ajuste a altura máxima da imagem conforme necessário */
+    max-height: 200px;
     border-radius: 10px;
 }
 
-.frame0 span {
+.frame span {
     margin-top: 10px;
     font-size: 16px;
-    padding: 5px 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
     color: white;
     border-radius: 5px;
 }
+
+/* Adiciona esta seção para remover overlays */
+.frame::before, .frame::after, .carousel::before, .carousel::after {
+    content: none; /* Remove qualquer overlay antes ou depois dos elementos */
+}
+

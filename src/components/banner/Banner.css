@@ -1,33 +1,15 @@
-.container1 {
-    display: flex;
+.baner {
+    display:flex;
+    height: 30vh;
+    font-family: 'Ubuntu', sans-serif;
     flex-direction: column;
     align-items: center;
-    position: relative; 
-    box-sizing: border-box;
     padding: 15px;
-    height: 340px;
-    background-image: url('../../assets/fundo.png');
+    background-image: url('../../assets/space.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     border-bottom: 2px solid orangered;
-}
-
-.container1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1; 
-}
-
-.container1 * {
-    position: relative;
-    z-index: 2; 
 }
 
 
