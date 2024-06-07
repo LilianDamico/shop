@@ -1,18 +1,18 @@
-import Formulario from './components/forms/Formulario';
-import Topo from './components/topo/Topo';
-import Rodape from './components/rodape/Rodape';
-
-
-
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home/Home';
+import Cadastro from './pages/cadastro/Cadastro';
+import Relatorio from './pages/relatorio/Relatorio';
 
 function App() {
   return (
-    <div className="App">
-      <Topo />
-      <Formulario />  
-      <Rodape />    
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/relatorio" element={<Relatorio />} />
+      </Routes>
+    </Router>
   );
 }
 
