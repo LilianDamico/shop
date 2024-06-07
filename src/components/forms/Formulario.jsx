@@ -1,5 +1,5 @@
 import React from 'react';
-import './Formulario.css'
+import './Formulario.css';
 
 const Formulario = () => {
   return (
@@ -7,34 +7,39 @@ const Formulario = () => {
       <section className='frame2'>
         <form className='frame3' action="/pagina-processa-dados-do-form" method="post">
           <div>
-            <label for="produto">Produto:</label>
+            <label htmlFor="produto">Produto:</label>
             <input type="text" id="produto" />
           </div>
           <div>
-            <label for="date">Data da compra:</label>
+            <label htmlFor="date">Data da compra:</label>
             <input type="datetime-local" id="date" />
           </div>
           <div>
-            <label>Código do produto</label>
-            <input type="number" id="number" />
+            <label htmlFor="codigoProduto">Código do produto:</label>
+            <input type="number" id="codigoProduto" />
           </div>
           <div>
-            <label>Quantidade</label>
-            <input type="number" id="number" />
+            <label htmlFor="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" />
           </div>
           <div>
-          <label>Valor unitário</label>
-          <input type="number" id="number" />
+            <label htmlFor="valorUnitario">Valor unitário:</label>
+            <input type="number" id="valorUnitario" />
           </div>
           <div>
-          <label>Valor total</label>
-          <input type="number" id="number" />
+            <label htmlFor="valorTotal">Valor total:</label>
+            <input type="number" id="valorTotal" />
           </div>
           <div>
-            <label for="msg">Mensagem:</label>
+            <label htmlFor="msg">Mensagem:</label>
             <textarea id="msg"></textarea>
           </div> 
-          <button className='custom-button' type='submit'>Enviar</button>     
+          <div className='button-container'>
+            <button className='custom-button green' type='submit'>Enviar</button>
+            <button className='custom-button blue' type='button'>Consultar</button>
+            <button className='custom-button yellow' type='button'>Editar</button>
+            <button className='custom-button red' type='button'>Excluir</button>
+          </div>    
         </form>
       </section>       
     </div>
